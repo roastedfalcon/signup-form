@@ -1,0 +1,35 @@
+@font-face {
+    font-family: norse;
+    src: url(./Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin: 0;
+    font-family: Helvetica;
+}
+
+aside {
+    background: url("halie-west-25xggax4bSA-unsplash.jpg");
+    
+}
+
+.img-container {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.img-container h1{
+    color: white;
+    font-family: norse;
+    font-size: 96px;
+}
+
+.citation {
+    color: white;
+}
+
+.lightgray {
+    background-color: #f0f0f0;
+}
