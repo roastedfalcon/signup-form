@@ -39,11 +39,12 @@
                 </p>
                 <p>
                     <label for="pwd">PASSWORD</label>
-                    <input type="password" id="pwd" name="password">
+                    <input type="password" id="pwd" name="password" onkeyup='check();'>
+                    <span class="error-msg"></span>
                 </p>
                 <p>
                     <label for="cpwd">CONFIRM PASSWORD</label>
-                    <input type="password" id="cpwd" name="confirm-password">
+                    <input type="password" id="cpwd" name="confirm-password"  onkeyup='check();'>
                 </p>
             </div>
             <div class="lightgray">
@@ -52,5 +53,21 @@
             </div>
         </form>
     </section>
+    <script>
+    const check = () => {
+        const pwd = document.querySelector('#pwd');
+        const cpwd = document.querySelector('#cpwd');
+        const span = document.querySelector('form p span'); 
+        if (pwd.value != cpwd.value) {
+            pwd.classList.add("error");
+            cpwd.classList.add("error");
+            span.classList.add("msg");
+        } else {
+            pwd.classList.remove("error");
+            cpwd.classList.remove("error");
+            span.classList.remove("msg");
+        }
+    } 
+    </script>
 </body>
 </html>
