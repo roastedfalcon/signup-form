@@ -6,7 +6,7 @@
 body {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     font-family: Helvetica;
 }
@@ -80,10 +80,12 @@ form > div:first-child{
     display: grid;
     grid-template-columns: 260px 260px;
     padding: 0 0 20px 40px;
+    
 }
 
 form > div:last-child {
     flex-grow:  1;
+    box-shadow: 0 0 20px lightgray;
 }
 
 form h3 {
